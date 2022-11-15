@@ -1,0 +1,215 @@
+* {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: auto;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #333;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+#toc-container {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 0px;
+  background-color: rgb(255, 255, 255);
+  z-index: 5;
+}
+.top-nav {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  z-index: 5;
+}
+.table-of-contents {
+  width: 100%;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  border-bottom: 2px solid rgb(231, 231, 231);
+}
+
+#toc > ul {
+  list-style: none;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+#toc a {
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  font-size: 14px;
+  width: 100%;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 12px 24px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+}
+
+#toc {
+  background-color: rgb(250, 250, 250);
+  max-height: 82vh;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.top-menu {
+  height: 100%;
+  padding: 0px 16px;
+  cursor: pointer;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+  outline: none;
+}
+#top-nav-menu {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+#pagination {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+.current-chapter {
+  height: 100%;
+  flex-basis: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#cur-chapter {
+  padding-left: 16px;
+}
+.pagination-btn {
+  min-width: 60px;
+  height: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: none;
+}
+.eQYOKL {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  transition: all 0.1s cubic-bezier(0.25, 0.1, 0.25, 1) 0s;
+}
+.eQYOKL > svg {
+  width: 18px;
+  height: 18px;
+}
+#prev {
+  text-align: left;
+  float: left;
+}
+#next {
+  text-align: right;
+  float: right;
+}
+
+#area {
+  height: 100vh;
+  padding: 5rem 3rem 6.5rem;
+  box-sizing: border-box;
+}
+#area div {
+  overflow: hidden;
+  height: 100vh;
+}
+#chapter {
+  cursor: pointer;
+  color: rgb(97, 142, 255);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#book-info {
+  display: flex;
+  padding: 24px;
+}
+#book-title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+#book-author {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+#cover {
+  margin-right: 12px;
+  width: 120px;
+  border-radius: 4px;
+}
+#controls {
+  height: 100%;
+  flex-basis: 100%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+#controls > input[type="range"] {
+  flex-basis: 100%;
+}
+#percent {
+  margin-left: 10px;
+}

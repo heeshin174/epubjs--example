@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>epub</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./jszip.min.js"></script>
+    <!-- <script src="./epub.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="toc-container">
+        <div class="top-nav">
+          <div class="table-of-contents">
+            <div id="top-nav-menu">
+              <div class="top-menu" id="toc-toggle">
+                <span>Table of contents</span>
+              </div>
+              <!-- <div class="top-menu" id="setting">
+                <span>Settings</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div id="navigation" class="toc-list">
+          <div id="toc">
+            <div id="book-info">
+              <img id="cover" src="" alt="cover image" />
+              <div class="sc-ksdxgE caFzfy">
+                <div id="book-title"></div>
+                <div id="book-author"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="area"></div>
+      <div id="pagination">
+        <div class="current-chapter" id="cur-chapter">
+          <span id="chapter"></span>
+        </div>
+        <button type="button" title="prev-btn" id="prev" class="pagination-btn">
+          <div class="sc-pVTFL eQYOKL">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+              <defs>
+                <style>
+                  .prev_svg__cls-3 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  }
+                </style>
+              </defs>
+              <g
+                id="prev_svg__\uB808\uC774\uC5B4_2"
+                data-name="\uB808\uC774\uC5B4 2"
+              >
+                <g
+                  id="prev_svg__\uB808\uC774\uC5B4_1-2"
+                  data-name="\uB808\uC774\uC5B4 1"
+                >
+                  <path fill="none" d="M0 0h44v44H0z" opacity="0.3"></path>
+                  <path
+                    class="prev_svg__cls-3"
+                    d="M12 22L32 2M12 22l20 20"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </button>
+        <div id="controls">
+          <input
+            id="current-percent"
+            type="range"
+            title="percentage"
+            value="0"
+            min="0"
+            max="100"
+            step="1"
+          />
+          <p id="percent">0%</p>
+        </div>
+        <button type="button" title="next-btn" id="next" class="pagination-btn">
+          <div class="sc-pVTFL eQYOKL">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44">
+              <defs>
+                <style>
+                  .next_svg__cls-3 {
+                    fill: none;
+                    stroke: #000;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke-width: 2px;
+                  }
+                </style>
+              </defs>
+              <g
+                id="next_svg__\uB808\uC774\uC5B4_2"
+                data-name="\uB808\uC774\uC5B4 2"
+              >
+                <g
+                  id="next_svg__\uB808\uC774\uC5B4_1-2"
+                  data-name="\uB808\uC774\uC5B4 1"
+                >
+                  <path fill="none" d="M0 0h44v44H0z" opacity="0.3"></path>
+                  <path
+                    class="next_svg__cls-3"
+                    d="M32 22L12 2M32 22L12 42"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
